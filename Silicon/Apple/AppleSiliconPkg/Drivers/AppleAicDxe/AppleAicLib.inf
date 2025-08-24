@@ -38,3 +38,4 @@
   gAppleSiliconPkgTokenSpaceGuid.PcdAicInterruptControllerBase
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSocIdentifier
   gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
+  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer

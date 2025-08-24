@@ -33,6 +33,7 @@
   DebugLib
   IoLib
   FdtLib
+  AppleDTLib
   ExtractGuidedSectionLib
   LzmaDecompressLib
   PeCoffGetEntryPointLib
@@ -62,7 +63,6 @@
   gArmTokenSpaceGuid.PcdSystemMemorySize
   gArmTokenSpaceGuid.PcdFvBaseAddress
   gArmTokenSpaceGuid.PcdFdBaseAddress
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
   gAppleSiliconPkgTokenSpaceGuid.PcdFrameBufferAddress
   gAppleSiliconPkgTokenSpaceGuid.PcdFrameBufferSize
 
@@ -79,3 +79,6 @@
   gEmbeddedTokenSpaceGuid.PcdPrePiCpuIoSize
   gAppleSiliconPkgTokenSpaceGuid.PcdSecPhaseStackBase
   gAppleSiliconPkgTokenSpaceGuid.PcdSecPhaseStackSize
+
+  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
+  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer

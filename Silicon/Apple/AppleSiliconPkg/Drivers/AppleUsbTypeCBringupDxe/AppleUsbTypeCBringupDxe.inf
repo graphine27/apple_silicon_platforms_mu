@@ -52,12 +52,13 @@
   IoLib
   PcdLib
   UefiLib
-  FdtLib
   ArmLib
   TimerLib
+  AppleDTLib
 
 [Pcd]
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSocIdentifier
+  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer
   gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleNumDwc3Controllers
 

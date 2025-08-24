@@ -18,6 +18,7 @@ ASM_FUNC(_ModuleEntryPoint)
   //back up initial start addr and FDT pointer
   mov x27, x0
   mov x26, x1
+  mov x25, x4 //boot args addr
   //Use FDT to discover usable DRAM base/size
   bl ASM_PFX(InitializeUART)
   //restore values
@@ -190,11 +191,6 @@ ASM_PFX(DiscoverDramFromDt):
   // respective PCDs. This will also return false if a corrupt DTB is
   // encountered.
   //
-  mov   x0, x27
-  adr   x1, PcdGet64 (PcdSystemMemoryBase)
-  adr   x2, PcdGet64 (PcdSystemMemorySize)
-  bl    FindMemnode
-  cbz   x0, .Lout
 
   //
   // Copy the DTB to a predefined location (cannot put it in FDF slack space due to how m1n1 does memory reservation)
@@ -203,13 +199,15 @@ ASM_PFX(DiscoverDramFromDt):
   // TODO - if there's a location that's more suitable that doesn't depend on hardcoding values, use it.
   //
 
-  adr   x8, PcdGet64 (PcdFdtPointer)
-  MOV64(x26, 0x10A00000000)
-  str   x26, [x8]
 
-  mov   x0, x26
-  mov   x1, x27
-  bl    CopyFdt
+  mov   x0, x25 //boot args addr
+  adr   x1, PcdGet64 (PcdSystemMemoryBase)
+  adr   x2, PcdGet64 (PcdSystemMemorySize)
+  MOV64 (x3, FixedPcdGet64(PcdBootArgsPointer))
+  MOV64 (x4, FixedPcdGet64(PcdFdtPointer))
+
+  bl    EarlySetup
+  cbz   x0, .Lout
 
 .Lout:
   ret    x28

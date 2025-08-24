@@ -57,7 +57,7 @@ VOID Main(IN VOID *StackBase, IN UINTN StackSize, IN VOID *DeviceTreePtr, IN UIN
        UefiMemoryBase, UefiMemoryLength, StackBase, StackSize));
     
     //Set the FdtPointer PCD to the set location we copied the FDT to during ModuleEntryPoint
-    PatchPcdSet64(PcdFdtPointer, (UINT64)DeviceTreePtr);
+    //PatchPcdSet64(PcdFdtPointer, (UINT64)DeviceTreePtr);//TODO: why it crashes and is it needed
 
 
     DEBUG((EFI_D_INFO | EFI_D_LOAD, "Setting up DXE Hand-Off Blocks.\n"));

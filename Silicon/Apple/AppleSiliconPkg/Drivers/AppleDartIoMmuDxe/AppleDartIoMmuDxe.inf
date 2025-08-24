@@ -50,16 +50,18 @@
   PcdLib
   UefiLib
   FdtLib
+  AppleDTLib
   ArmLib
   TimerLib
 
 [Pcd]
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSocIdentifier
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
   gEmbeddedTokenSpaceGuid.PcdDmaDeviceOffset
 
 [FixedPcd]
-  gAppleSiliconPkgTokenSpaceGuid.PcdAppleNumDwc3Darts
+  gAppleSiliconPkgTokenSpaceGuid.PcdAppleNumDwc3Controllers
+  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
+  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer
 
 [Protocols]
   gEdkiiIoMmuProtocolGuid # Produces

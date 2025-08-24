@@ -117,7 +117,7 @@ UINT32 EFIAPI AppleAicGetMaxInterrupts(
     else if (mAicVersion == APPLE_AIC_VERSION_1)
     {
         //AICv1 is hard capped to 1024 IRQs
-        MaxIrqs = 0x400;
+        MaxIrqs = AIC_MAX_IRQ;
     }
     else {
         MaxIrqs = 0;

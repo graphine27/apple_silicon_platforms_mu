@@ -22,7 +22,6 @@
   gArmTokenSpaceGuid.PcdSystemMemorySize|0x400000000 #16GB RAM space by default
   gArmTokenSpaceGuid.PcdFdBaseAddress|0x0
   gArmTokenSpaceGuid.PcdFvBaseAddress|0x0
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer|0x10A00000000
   gAppleSiliconPkgTokenSpaceGuid.PcdFrameBufferAddress|0x0
   gAppleSiliconPkgTokenSpaceGuid.PcdFrameBufferSize|0x0
 
@@ -43,6 +42,8 @@
   gAppleSiliconPkgTokenSpaceGuid.PcdSecPhaseStackBase|0x10300000000
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSartVersion|3
   gAppleSiliconPkgTokenSpaceGuid.PcdXhciPcieDeviceNumber|3
+  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer|0x10A00000000
+  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer|0x10A00004000
 #AIC/GIC configuration settings
 !if $(AIC_BUILD) == FALSE
   #

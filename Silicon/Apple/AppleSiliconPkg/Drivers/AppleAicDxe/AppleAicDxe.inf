@@ -46,7 +46,7 @@
   IoLib
   PcdLib
   UefiLib
-  FdtLib
+  AppleDTLib
   ArmGenericTimerCounterLib
 
 [Protocols]
@@ -58,6 +58,7 @@
   gAppleSiliconPkgTokenSpaceGuid.PcdAicInterruptControllerBase
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSocIdentifier
   gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
+  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer
 
 [Depex]
   TRUE

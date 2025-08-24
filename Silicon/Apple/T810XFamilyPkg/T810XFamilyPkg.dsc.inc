@@ -2,7 +2,6 @@
   #These will get overriden by the FDT settings
   gArmTokenSpaceGuid.PcdSystemMemoryBase|0x800000000
   gArmTokenSpaceGuid.PcdSystemMemorySize|0x200000000 #8GB RAM space by default
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer|0x840000000
   gArmTokenSpaceGuid.PcdFdBaseAddress|0x0
   gArmTokenSpaceGuid.PcdFvBaseAddress|0x0
   gAppleSiliconPkgTokenSpaceGuid.PcdFrameBufferAddress|0x0
@@ -17,6 +16,8 @@
   gArmTokenSpaceGuid.PcdArmArchTimerHypIntrNum|20 #this disables the HV timer
   gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|18 #virt timer
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSartVersion|2
+  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer|0x840000000
+  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer|0x840004000
 !if $(USES_MAC_CPU) == TRUE
   gAppleSiliconPkgTokenSpaceGuid.PcdSmbiosCpuIdentifier|"T8103"
   gAppleSiliconPkgTokenSpaceGuid.PcdSmbiosCpuModel|"Apple M1"
