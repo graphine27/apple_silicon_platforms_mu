@@ -58,8 +58,6 @@
 
 [Pcd]
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSocIdentifier
-  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleNumDwc3Controllers
 
 [Guids]

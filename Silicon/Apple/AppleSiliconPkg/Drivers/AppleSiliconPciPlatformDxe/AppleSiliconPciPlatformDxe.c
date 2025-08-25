@@ -114,7 +114,7 @@ STATIC EFI_STATUS AppleSiliconPciePlatformDxeSetupPciePort(APPLE_PCIE_COMPLEX_IN
   APPLE_PCIE_GPIO_DESC ResetGpioStruct;
   EMBEDDED_GPIO *GpioProtocol;
   UINTN RetrievedGpioValue;
-  // UINT64 FdtBlob = PcdGet64(PcdFdtPointer);
+
   BOOLEAN RefClk0Acked;
   BOOLEAN RefClk1Acked;
   BOOLEAN PortReady;

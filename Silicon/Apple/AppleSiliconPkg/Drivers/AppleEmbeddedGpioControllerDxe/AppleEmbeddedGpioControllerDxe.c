@@ -211,7 +211,7 @@ AppleEmbeddedGpioControllerDxeInitialize(
   EFI_HANDLE GpioHandle;
   GPIO_CONTROLLER *GpioController;
   // UINTN NumberOfCpuDies;
-  UINT8 NumberOfGpioPins = PcdGet8(PcdAppleNumGpios);
+  UINT8 NumberOfGpioPins;
   // INT32 PinCtrlApNodes[2];
   dt_node_t *PinCtrlApNode;
   UINT64 PinCtrlApReg;

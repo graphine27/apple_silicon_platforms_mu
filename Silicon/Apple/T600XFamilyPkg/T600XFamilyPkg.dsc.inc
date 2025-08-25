@@ -43,7 +43,7 @@
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSartVersion|3
   gAppleSiliconPkgTokenSpaceGuid.PcdXhciPcieDeviceNumber|3
   gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer|0x10A00000000
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer|0x10A00004000
+  gAppleSiliconPkgTokenSpaceGuid.PcdAdtPointer|0x10A00004000
 #AIC/GIC configuration settings
 !if $(AIC_BUILD) == FALSE
   #

@@ -144,7 +144,7 @@ ASM_PFX(DiscoverDramFromDt):
   // by the platform.
   //
   cbnz  x0, 0f
-  ldr   x0, =PcdGet64 (PcdFdtPointer)
+  ldr   x0, =PcdGet64 (PcdAdtPointer)
   ldr   x0, [x0]
 
 0:mov   x28, x30            // preserve LR
@@ -193,9 +193,9 @@ ASM_PFX(DiscoverDramFromDt):
   //
 
   //
-  // Copy the DTB to a predefined location (cannot put it in FDF slack space due to how m1n1 does memory reservation)
+  // Copy the ADT to a predefined location (cannot put it in FDF slack space due to how m1n1 does memory reservation)
   // guaranteed to never be allocated until OS boot (at which point this is no longer relevant)
-  // and record the pointer in PcdFdtPointer.
+  // and record the pointer in PcdAdtPointer.
   // TODO - if there's a location that's more suitable that doesn't depend on hardcoding values, use it.
   //
 
@@ -204,7 +204,7 @@ ASM_PFX(DiscoverDramFromDt):
   adr   x1, PcdGet64 (PcdSystemMemoryBase)
   adr   x2, PcdGet64 (PcdSystemMemorySize)
   MOV64 (x3, FixedPcdGet64(PcdBootArgsPointer))
-  MOV64 (x4, FixedPcdGet64(PcdFdtPointer))
+  MOV64 (x4, FixedPcdGet64(PcdAdtPointer))
 
   bl    EarlySetup
   cbz   x0, .Lout

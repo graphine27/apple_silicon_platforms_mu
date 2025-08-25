@@ -44,10 +44,6 @@
   gEfiMdeModulePkgTokenSpaceGuid
 
 [Pcd]
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoHorizontalResolution
-  gEfiMdeModulePkgTokenSpaceGuid.PcdVideoVerticalResolution
-  gAppleSiliconPkgTokenSpaceGuid.PcdFrameBufferAddress
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
   gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer
 
 [Depex]

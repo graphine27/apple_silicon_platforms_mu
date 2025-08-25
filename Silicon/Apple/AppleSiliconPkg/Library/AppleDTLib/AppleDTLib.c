@@ -312,13 +312,13 @@ dt_node_t* dt_node_parent(dt_node_t *node)
     // The problem is that we currently allow clients to directly modify DeviceTree velues and we will need that
     // in one form or another regardless, so we'd have to think about how to design such a writeback.
     dt_node_parent_cb_t arg = { .target = node };
-    dt_parse((dt_node_t*)FixedPcdGet64(PcdFdtPointer), 0, NULL, &dt_node_parent_cb, &arg, NULL, NULL);
+    dt_parse((dt_node_t*)FixedPcdGet64(PcdAdtPointer), 0, NULL, &dt_node_parent_cb, &arg, NULL, NULL);
     return arg.parent;
 }
 
 dt_node_t* dt_get(const char *name)
 {
-    return dt_node((dt_node_t*)FixedPcdGet64(PcdFdtPointer), name);
+    return dt_node((dt_node_t*)FixedPcdGet64(PcdAdtPointer), name);
 }
 
 void* dt_node_prop(dt_node_t *node, const char *prop, size_t *size)

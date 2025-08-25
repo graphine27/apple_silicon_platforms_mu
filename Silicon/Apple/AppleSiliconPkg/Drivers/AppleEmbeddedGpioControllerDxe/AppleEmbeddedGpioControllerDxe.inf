@@ -51,10 +51,7 @@
   AppleDTLib
 
 [Pcd]
-  gAppleSiliconPkgTokenSpaceGuid.PcdAppleSocIdentifier
-  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
-  gAppleSiliconPkgTokenSpaceGuid.PcdAppleNumGpios
+
 
 [Protocols]
   gEmbeddedGpioProtocolGuid # Installed

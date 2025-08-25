@@ -169,7 +169,7 @@ SimpleFbDxeInitialize(
   /* Retrieve simple frame buffer from pre-SEC bootloader */
   DEBUG(
       (EFI_D_INFO,
-       "SimpleFbDxe: Getting framebuffer parameters from PCD and FDT\n"));
+       "SimpleFbDxe: Getting framebuffer parameters from PCD and ADT\n"));
 
   
   

@@ -15,14 +15,14 @@ EarlySetup (
   IN VOID     *BootArgsAddr,
   OUT UINT64  *SystemMemoryBase,
   OUT UINT64  *SystemMemorySize,
-  IN    VOID  *PcdBootArgs,
+  IN    VOID  *PcdBootArgsDest,
   IN    VOID  *PcdAdtDest
   )
 {
 
   struct boot_args *BootArgs = (struct boot_args *)BootArgsAddr;
 
-  CopyMem(PcdBootArgs, BootArgsAddr, sizeof(struct boot_args));
+  CopyMem(PcdBootArgsDest, BootArgsAddr, sizeof(struct boot_args));
   CopyMem(PcdAdtDest, (VOID*)BootArgs->devtree - BootArgs->virt_base + BootArgs->phys_base, BootArgs->devtree_size);
 
   if(dt_check(PcdAdtDest, BootArgs->devtree_size, NULL) != 0) {

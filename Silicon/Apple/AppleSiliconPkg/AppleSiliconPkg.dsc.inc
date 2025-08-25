@@ -228,8 +228,6 @@
   # Apple Device Tree (ADT) access library
   AppleDTLib|AppleSiliconPkg/Library/AppleDTLib/AppleDTLib.inf
 
-  # Flattened Device Tree (FDT) access library
-  FdtLib|EmbeddedPkg/Library/FdtLib/FdtLib.inf
 
   # USB Libraries
   UefiUsbLib|MdePkg/Library/UefiUsbLib/UefiUsbLib.inf

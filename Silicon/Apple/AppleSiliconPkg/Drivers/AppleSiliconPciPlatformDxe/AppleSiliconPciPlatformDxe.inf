@@ -55,8 +55,6 @@
 
 [Pcd]
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSocIdentifier
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
-  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer
 
 [Protocols]
   gEmbeddedGpioProtocolGuid # used

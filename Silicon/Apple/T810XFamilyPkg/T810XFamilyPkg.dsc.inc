@@ -17,7 +17,7 @@
   gArmTokenSpaceGuid.PcdArmArchTimerVirtIntrNum|18 #virt timer
   gAppleSiliconPkgTokenSpaceGuid.PcdAppleSartVersion|2
   gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer|0x840000000
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer|0x840004000
+  gAppleSiliconPkgTokenSpaceGuid.PcdAdtPointer|0x840004000
 !if $(USES_MAC_CPU) == TRUE
   gAppleSiliconPkgTokenSpaceGuid.PcdSmbiosCpuIdentifier|"T8103"
   gAppleSiliconPkgTokenSpaceGuid.PcdSmbiosCpuModel|"Apple M1"
