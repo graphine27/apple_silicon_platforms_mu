@@ -5,7 +5,7 @@
  */
 
 #include <Uefi.h>
-#include <Include/libfdt.h>
+#include <Library/BaseMemoryLib.h>
 #include <Library/DebugAgentLib.h>
 #include <Library/DebugLib.h>
 #include <Library/AppleDTLib.h>

@@ -351,7 +351,7 @@ AppleDartIoMmuDxeInitialize(
     }
 
     //
-    // Get the base addresses from the FDT. Right now there's no good way I know of to test for:
+    // Get the base addresses from the ADT. Right now there's no good way I know of to test for:
     //   a. the number of dies a multi-die capable SoC has.
     //   b. how many DARTs a given SoC die has.
     // Given that this driver is mainly meant to bring up USB controller DARTs and was mostly designed for that purpose, for now

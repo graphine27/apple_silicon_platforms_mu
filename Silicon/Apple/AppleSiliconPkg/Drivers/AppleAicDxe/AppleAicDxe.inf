@@ -46,7 +46,6 @@
   IoLib
   AppleDTLib
   UefiLib
-  AppleDTLib
   ArmGenericTimerCounterLib
 
 [Protocols]

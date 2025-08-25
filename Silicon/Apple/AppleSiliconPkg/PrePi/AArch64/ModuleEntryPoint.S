@@ -15,11 +15,11 @@ GCC_ASM_IMPORT(UARTRelocationDebugMessage)
 
 ASM_FUNC(_ModuleEntryPoint)
 
-  //back up initial start addr and FDT pointer
+  //back up initial start addr and ADT pointer
   mov x27, x0
   mov x26, x1
   mov x25, x4 //boot args addr
-  //Use FDT to discover usable DRAM base/size
+  //Use ADT to discover usable DRAM base/size
   bl ASM_PFX(InitializeUART)
   //restore values
   mov x0, x27
