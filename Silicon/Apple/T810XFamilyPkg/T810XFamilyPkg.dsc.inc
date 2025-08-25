@@ -39,10 +39,6 @@
   #
   gArmTokenSpaceGuid.PcdGicDistributorBase|0xf00000000
   gArmTokenSpaceGuid.PcdGicRedistributorsBase|0xf10000000
-!else
-  #this is MMIO space where the AIC lives
-  gAppleSiliconPkgTokenSpaceGuid.PcdAicInterruptControllerBase|0x23b100000
-
 !endif
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiDefaultOemRevision|0x00008103
 

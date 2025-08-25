@@ -44,7 +44,7 @@
   MemoryAllocationLib
   UefiDriverEntryPoint
   IoLib
-  PcdLib
+  AppleDTLib
   UefiLib
   AppleDTLib
   ArmGenericTimerCounterLib
@@ -55,10 +55,6 @@
   gEfiCpuArchProtocolGuid         ## CONSUMES ## NOTIFY
 
 [Pcd.common]
-  gAppleSiliconPkgTokenSpaceGuid.PcdAicInterruptControllerBase
-  gAppleSiliconPkgTokenSpaceGuid.PcdAppleSocIdentifier
-  gAppleSiliconPkgTokenSpaceGuid.PcdFdtPointer
-  gAppleSiliconPkgTokenSpaceGuid.PcdBootArgsPointer
 
 [Depex]
   TRUE
